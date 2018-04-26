@@ -68,7 +68,7 @@
     letter-spacing: 1px;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) and (min-width: 670px) {
   /* For mobile phones: */
     .body_medium{
         width:100%;
@@ -102,3 +102,14 @@
         visibility: hidden;
     }
 }
+
+@media only screen and (max-width:669px) {
+  /* For mobile phones: */
+    ..profile_item{
+        width: 400px;
+        float: none;
+        margin: 0 10;
+        display: inline-block;
+    }
+}
+
