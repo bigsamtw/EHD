@@ -85,7 +85,6 @@
         margin: 0;
     }
     .profile_item{
-        width: 300px;;
         margin: 10 10;
     }
     #logo{
@@ -116,13 +115,14 @@
     }
     .profile{
         display: inline-block;
+        width: inherit;
         float: none;
         margin: 0;
     }
      .profile_item{
-        width: 400px;
+        min-width: 200px;
         float: none;
-        margin: 0 10;
+        margin: 10 0;
         display: inline-block;
     }
     #logo{
