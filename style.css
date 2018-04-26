@@ -80,11 +80,12 @@
     }
     .profile{
         display: inline-block;
+        width: 640px;
         float: none;
         margin: 0;
     }
     .profile_item{
-        width: 300;
+        width: 300px;;
         margin: 10 10;
     }
     #logo{
@@ -105,11 +106,40 @@
 
 @media only screen and (max-width:669px) {
   /* For mobile phones: */
-    ..profile_item{
+    .body_medium{
+        width:100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .body_blank{
+        width: 0%;
+    }
+    .profile{
+        display: inline-block;
+        float: none;
+        margin: 0;
+    }
+     .profile_item{
         width: 400px;
         float: none;
         margin: 0 10;
         display: inline-block;
     }
+    #logo{
+        margin-left: 10px;
+    }
+    #lines{
+        margin-left: 10px;
+    }
+    .about{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #decorate_line{
+        height: 2px;
+        visibility: hidden;
+    }
+   
+    
 }
 
