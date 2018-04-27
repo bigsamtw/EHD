@@ -6,7 +6,7 @@
 .body_medium{
     float: left;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .body_blank{
@@ -46,7 +46,6 @@
     float: left;
     width: 300px;
     height: 400px;
-    background-color: aqua;
     margin: 10px;
 }
 
