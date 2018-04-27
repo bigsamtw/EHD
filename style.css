@@ -1,6 +1,6 @@
 * {
-  box-sizing: border-box;
-     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", sans-serif;
 }
 
 .body_medium{
@@ -67,8 +67,91 @@
     color: darkgray;
     letter-spacing: 1px;
 }
+@media only screen and (max-width:1540px)and (min-width: 1490px){
+    .body_medium{
+        width:90%;    
+    }
+    .body_blank{
+        width: 5%;
+    }
+    .profile{
+        display: inline-block;
+        width: 1280px;
+        float: none;
+        margin-left: 50px;
+    }
+    #logo{
+        margin-left: 20px;
+    }
+    #lines{
+        margin-right: 20px;
+    }
+}
 
-@media only screen and (max-width:900px) and (min-width: 670px) {
+@media only screen and (max-width:1489px) and (min-width: 1400px) {
+  /* For mobile phones: */
+    .body_medium{
+        width:100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .body_blank{
+        width: 0%;
+    }
+    .profile{
+        display: inline-block;
+        width: 1280px;
+        float: none;
+        margin: 0;
+    }
+    #logo{
+        margin-left: 20px;
+    }
+    #lines{
+        margin-right: 20px;
+    }
+    .about{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #decorate_line{
+        height: 2px;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:1399px) and (min-width: 1080px) {
+  /* For mobile phones: */
+    .body_medium{
+        width:100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .body_blank{
+        width: 0%;
+    }
+    .profile{
+        display: inline-block;
+        width: 960px;
+        float: none;
+        margin: 0;
+    }
+    #logo{
+        margin-left: 20px;
+    }
+    #lines{
+        margin-right: 20px;
+    }
+    .about{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #decorate_line{
+        height: 2px;
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width:1079px) and (min-width: 680px) {
   /* For mobile phones: */
     .body_medium{
         width:100%;
@@ -84,14 +167,11 @@
         float: none;
         margin: 0;
     }
-    .profile_item{
-        margin: 10 10;
-    }
     #logo{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     #lines{
-        margin-left: 10px;
+        margin-right: 20px;
     }
     .about{
         text-align: center;
@@ -102,8 +182,7 @@
         visibility: hidden;
     }
 }
-
-@media only screen and (max-width:669px) {
+@media only screen and (max-width:679px) and (min-width: 480px){
   /* For mobile phones: */
     .body_medium{
         width:100%;
@@ -115,7 +194,9 @@
     }
     .profile{
         display: inline-block;
-        width: inherit;
+        width: inherit;        
+        padding-left: 50px;
+        padding-right: 50px;
         float: none;
         margin: 0;
     }
@@ -129,7 +210,46 @@
         margin-left: 10px;
     }
     #lines{
+        margin-right: 10px;
+    }
+    .about{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #decorate_line{
+        height: 2px;
+        visibility: hidden;
+    }
+   
+    
+}
+@media only screen and (max-width:479px) {
+  /* For mobile phones: */
+    .body_medium{
+        width:100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .body_blank{
+        width: 0%;
+    }
+    .profile{
+        display: inline-block;
+        width: inherit;  
+        float: none;
+        margin: 0;
+    }
+     .profile_item{
+        min-width: 200px;
+        float: none;
+        margin: 10 0;
+        display: inline-block;
+    }
+    #logo{
         margin-left: 10px;
+    }
+    #lines{
+        margin-right: 10px;
     }
     .about{
         text-align: center;
