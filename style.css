@@ -19,7 +19,6 @@
     
 }
 
-
 #logo{
     float: left;
     width: 50px;
@@ -29,6 +28,22 @@
     float: right;
     width: 50px;
     
+}
+
+.ui.circular.icon.button {
+    float:right;
+    width: 30px;
+    height: 30px;
+}
+
+.iconi {
+    margin-left: -17px;
+    margin-top: -20px;
+}
+
+.ui.image{
+    width: 60px;
+    height: 60px;
 }
 
 .about{
