@@ -37,8 +37,10 @@
 }
 
 .iconi {
+    width: 40px;
+    height: auto;
     margin-left: -17px;
-    margin-top: -20px;
+    margin-top: -17px;
 }
 
 .ui.image{
