@@ -1,5 +1,6 @@
 $(window).resize(function(){
     refreshModal();
+    console.log("resize");
     windowResize();
 });
 
