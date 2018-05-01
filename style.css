@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", sans-serif;
+    
 }
 
 .body_medium{
@@ -9,6 +10,9 @@
     margin-top: 20px;
 }
 
+#description{
+    color: darkgray;
+}
 .body_blank{
     float: left;
     width: 10%;
@@ -43,11 +47,6 @@
     margin-top: -17px;
 }
 
-.ui.image{
-    width: 60px;
-    height: 60px;
-}
-
 .about{
     float: none;
     margin-top: 50px;
@@ -77,12 +76,90 @@
     background-color: lightgrey;
         
 }
+.popup_items{
+    background-color: #BBBBBB;
+    height: 400px;
+    width:  535px;
+    float: left;
+    visibility: hidden;
+}
 
-#description{
+.popup_image_content{
+    padding: 10px;
+    width: 58%;
+    float: left;
+
+}
+
+.popup_name{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 
+    font-weight:400;
+    
+}
+
+.popup_description{
+    width: 42%;
+    float: left;
     line-height: 30px;
     color: darkgray;
     letter-spacing: 1px;
 }
+
+.popup_name{
+    color: white;
+    float: none;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 18;
+}
+
+.popup_left_decription{
+    float: left;
+    margin-top: 10px;
+
+}
+
+.popup_right_decription{
+    float: right;
+    width: 70px;
+    margin-top: 45%;
+    margin-right: 10px;
+}
+
+.popup_line{
+    float: right;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 25%;
+    width: 3px;
+    background-color: white;
+}
+
+.popup_motto{
+    -webkit-writing-mode: vertical-lr;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 25px;
+    color: #555;
+
+}
+
+.popup_mail{
+   float: right;
+}
+
+.popup_fb{
+    float: right;
+    margin-top: 10px;
+}
+.popup_major{
+    margin-top: 10px;
+}
+
+
 @media only screen and (max-width:1540px)and (min-width: 1490px){
     .body_medium{
         width:90%;    
