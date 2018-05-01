@@ -1,6 +1,5 @@
 $(window).resize(function(){
     refreshModal();
-    console.log("resize");
     windowResize();
 });
 
@@ -9,6 +8,8 @@ $(document).ready(function(){
 });
 
 function windowResize() {
+        console.log("resize");
+
     if($(window).width() <  1080 ) {
         for (var i = 1 ; i < 9 ; ++i) {
             setModal(i)
