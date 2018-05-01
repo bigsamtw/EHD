@@ -11,7 +11,7 @@ function windowResize() {
     if($(window).width() <  1080 ) {
         for (var i = 1 ; i < 9 ; ++i) {
             setModal(i)
-            $(`.ui.circular.icon.button#${i}`).popup(false);        
+            $(`ui.circular.icon.button#${i}`).popup(false);        
         }
     }
     else{
