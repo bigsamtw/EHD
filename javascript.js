@@ -2,6 +2,8 @@
 
 
 $(window).resize(function(){
+    refreshModal();
+    refreshModal();
     windowResize();
 });
 
@@ -13,7 +15,7 @@ function windowResize() {
     if($(window).width() <  1080 ) {
         for (var i = 1 ; i < 9 ; ++i) {
             setModal(i)
-            $(`ui.circular.icon.button#${i}`).popup(false);        
+            $(`ui.circular.icon.button#${i}`).popup('remove popup');        
         }
     }
     else{
@@ -25,15 +27,17 @@ function windowResize() {
 }
 function setModal(id) {
     $(`.ui.circular.icon.button#${id}`).on('click.modal', function(){
-        $(`.ui.modal#mobile_image${id}`).modal('show');
+        $(`.ui.modal#modal_${id}`).modal('show');
     });
 }
 
 function setPopup(id) {
     $(`.ui.circular.icon.button#${id}`).popup({
         on: 'click',
-        variation: 'basic',
+        inline: true,
+        position: 'bottom left',
+        lastResort: 'true',
         target: `#image${id}`,
-        html: `<img src="about/Intro ${id}.png" height="380" width="auto">`
+        popup : $(`.ui.custom.popup.top.left.transition.hidden#pop_${id}`)
     });
 }
