@@ -2,7 +2,105 @@
     box-sizing: border-box;
     font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", sans-serif;
 }
+.heart{
+    position: absolute;
+    z-index: 1;
+}
+#left-heart1{
+    width:10%;
+    height:10%;
+    margin-top:100;
+    margin-left:60;
+}
+#left-heart2{
+    width:13%;
+    height:13%;
+    margin-top:60;
+    margin-left:30;
+}
+#left-heart3{
+    width:16%;
+    height:16%;
+    margin-top:10;
+    margin-left:40;
+}
+#right-heart1{
+    width:10%;
+    height:10%;
+    margin-top:100;
+    margin-left:210;
+}
+#right-heart2{
+    width:13%;
+    height:13%;
+    margin-top:60;
+    margin-left:240;
+}
+#right-heart3{
+    width:16%;
+    height:16%;
+    margin-top:10;
+    margin-left:215;
+}
+.beard{
+    position:absolute;
+    z-index: 1;
+}
+#downbeard{
+    width:50%;
+    margin-top:203;
+    margin-left:60;
+}
+#upbeard{
+    width:50%;
+    margin-top:190;
+    margin-left:60;
+}
 
+.star{
+    position:absolute;
+    z-index: 1;
+}
+#leftstar{
+    width:25%;
+    margin-left:80;
+    margin-top:120;
+}
+#rightstar{
+    width:25%;
+    margin-left:150;
+    margin-top:120;
+}
+
+#hat{
+    position:absolute;
+    z-index:1;
+    width:96%;
+    margin-left:4;
+}
+#block{
+    position:absolute;
+    z-index:1;
+    background-color:black;
+    margin-left: 75;
+    margin-top:130;
+    width:47%;
+    height:10%;
+}
+#bubble{
+    position:absolute;
+    z-index: 1;
+    width:40%;
+    margin-left:140;
+    margin-top:100;
+}
+#lip{
+    position:absolute;
+    z-index: 1;
+    width:7%;
+    margin-left:142;
+    margin-top:187;
+}
 .body_medium{
     float: left;
     width: 80%;
@@ -14,7 +112,6 @@
     width: 10%;
     height: 100%;
 }
-
 .header{
     
 }
