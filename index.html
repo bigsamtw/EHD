@@ -21,65 +21,83 @@
             $("#bubble").hide();
             $("#glenimg").mouseenter(function(){
                 $("#glenimg").hide();
-                $("#heartglen").fadeIn("fast");
-                setInterval(function(){
-                    $("#left-heart1").transition('flash');
-                    $("#left-heart2").transition('flash');
-                    $("#left-heart3").transition('flash');
-                    $("#right-heart1").transition('flash');
-                    $("#right-heart2").transition('flash');
-                    $("#right-heart3").transition('flash');},"slow");
+                $("#heartglen").show();
+                $("#left-heart1").transition('flash');
+                $("#left-heart2").transition('flash');
+                $("#left-heart3").transition('flash');
+                $("#right-heart1").transition('flash');
+                $("#right-heart2").transition('flash');
+                $("#right-heart3").transition('flash');
             });
-            $("#kennyimg").hover(function(){
+            $("#heartglen").mouseleave(function(){
+                $(".heart").hide();
+                $("#heartglen").hide();
+                $("#glenimg").show();
+            })
+            $("#kennyimg").mouseenter(function(){
                 $("#kennyimg").hide();
-                $("#kennyani").fadeIn("fast");
-                $("#downbeard").fadeIn("fast");
-                setInterval(function(){
-                    $("#downbeard").transition('tada');
-                },"slow");
+                $("#kennyani").show();
+                $("#downbeard").show();
+                $("#downbeard").transition('tada');
             })
-            $("#hanimg").hover(function(){
+            $("#kennyani").mouseleave(function(){
+                $("#kennyimg").show();
+                $("#kennyani").hide();
+                $("#downbeard").hide();
+            })
+            $("#hanimg").mouseenter(function(){
                 $("#hanimg").hide();
-                $("#hanani").fadeIn("fast");
-                $(".star").fadeIn("fast");
-                setInterval(function(){
-                    $(".star").transition('jiggle');
-                },"slow");
+                $("#hanani").show();
+                $(".star").show();
+                $(".star").transition('jiggle');
             })
-            $("#chiaimg").hover(function(){
+            $("#hanani").mouseleave(function(){
+                $("#hanani").hide();
+                $("#hanimg").show();
+                $(".star").hide();
+            })
+            $("#chiaimg").mouseenter(function(){
                 $("#chiaimg").hide();
-                $("#chiaani").fadeIn("fast");
-                $("#hat").fadeIn("fast");
-                setInterval(function(){
-                    $("#hat").transition('bounce');
-                },"slow");
+                $("#chiaani").show();
+                $("#hat").show();
+                $("#hat").transition('bounce');
             })
-            $("#andyimg").hover(function(){
+            $("#chiaani").mouseleave(function(){
+                $("#chiaimg").show();
+                $("#chiaani").hide();
+                $("#hat").hide();
+            })
+            $("#andyimg").mouseenter(function(){
                 $("#andyimg").hide();
-                $("#andyani").fadeIn("fast");
-                $("#block").fadeIn("fast");
-                setInterval(function(){
-                    $("#block").animate({
-                        height:'toggle'
-                    });
-                },"1000");
+                $("#andyani").show();
+                $("#block").show();
+                $("#block").animate({height:'toggle'});
             })
-            $("#lewisimg").hover(function(){
+            $("#andyani").mouseleave(function(){
+                $("#andyimg").show();
+                $("#andyani").hide();
+                $("#block").hide();
+            })
+            $("#lewisimg").mouseenter(function(){
                 $("#lewisimg").hide();
-                $("#lewisani").fadeIn("fast");
-                $("#bubble").fadeIn("fast");
-                setInterval(function(){
-                    $("#bubble").transition('fade right')
-                },"1000");
+                $("#lewisani").show();
+                $("#bubble").transition('fade right');
             })
-            $("#lisaimg").hover(function(){
+            $("#lewisani").mouseleave(function(){
+                $("#lewisimg").show();
+                $("#lewisani").hide();
+                $("#bubble").transition('fade right');
+            })
+            $("#lisaimg").mouseenter(function(){
                 $("#lisaimg").hide();
-                $("#lisaani").fadeIn("fast");
-                $("#lip").fadeIn("fast");
-                setInterval(function(){
-                    $("#lip").animate({width:'100%',height:'100%',left:-120,top:-130,opacity:0.01},"slow");
-                    $("#lip").animate({width:'7%',height:'7%',left:0,top:0,opacity:1},0.000001);
-                },"3000");
+                $("#lisaani").show();
+                $("#lip").show(); $("#lip").animate({width:'100%',height:'100%',left:-120,top:-130,opacity:0.01},"slow");
+                $("#lip").animate({width:'7%',height:'7%',left:0,top:0,opacity:1},0.000001);   
+            })
+            $("#lisaani").mouseleave(function(){
+                $("#lisaimg").show();
+                $("#lisaani").hide();
+                $("#lip").hide();
             })
         });
     </script>
@@ -317,7 +335,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/kennykennykennytw?ref=br_rs"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -340,7 +358,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/bigsamtw?ref=br_rs"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -363,7 +381,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/profile.php?id=100004465479509"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -386,7 +404,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/lewis.huang.583"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -409,7 +427,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/lewis.huang.583"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -432,7 +450,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/profile.php?id=100004465479509"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -485,7 +503,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/kennykennykennytw?ref=br_rs"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -508,7 +526,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/bigsamtw?ref=br_rs"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -531,7 +549,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/profile.php?id=100004465479509"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -554,7 +572,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/lewis.huang.583"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -577,7 +595,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/lewis.huang.583"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
@@ -600,7 +618,7 @@
             <a class = "popup_mail" href="mailto:glen84910@gmail.com?subject=subject&cc=cc@example.com"style = " float: right">
                 <img src="https://i.imgur.com/DNVwzDH.png" width="50px" >
             </a>
-            <a class = "popup_fb" href="https://www.facebook.com/glen.lee.71"  style = "float: right; margin-top: 10px;">
+            <a class = "popup_fb" href="https://www.facebook.com/profile.php?id=100004465479509"  style = "float: right; margin-top: 10px;">
                 <img src = "https://i.imgur.com/7lVjNh5.png" width="50px" >
             </a>
             <img class = "popup_major" src="https://i.imgur.com/YIybfDq.png" width="70px" style=" margin-top: 10px;">
