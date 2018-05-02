@@ -1,5 +1,6 @@
 $(window).resize(function(){
-    refreshModal();
+//    refreshModal();
+//    refreshModal();
     windowResize();
 });
 
@@ -8,12 +9,10 @@ $(document).ready(function(){
 });
 
 function windowResize() {
-        console.log("resize");
-
-    if($(window).width() <  1080 ) {
+    if($(window).width() <  1480 ) {
         for (var i = 1 ; i < 9 ; ++i) {
-            setModal(i)
-            $(`ui.circular.icon.button#${i}`).popup('remove popup');        
+            setModal(i);
+            $(`.ui.circular.icon.button#${i}`).popup(false);        
         }
     }
     else{
@@ -23,6 +22,7 @@ function windowResize() {
         }
     }
 }
+
 function setModal(id) {
     $(`.ui.circular.icon.button#${id}`).on('click.modal', function(){
         $(`.ui.modal#modal_${id}`).modal('show');
@@ -32,9 +32,8 @@ function setModal(id) {
 function setPopup(id) {
     $(`.ui.circular.icon.button#${id}`).popup({
         on: 'click',
-        inline: true,
-        position: 'bottom left',
-        lastResort: 'true',
+ //       position: 'bottom left',
+        lastResort : 'left bottom',
         target: `#image${id}`,
         popup : $(`.ui.custom.popup.top.left.transition.hidden#pop_${id}`)
     });
