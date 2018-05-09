@@ -1,9 +1,25 @@
 {
-  "name": "Clues City",
-  "short_name": "Clues City",
+  "name": "Weather",
+  "short_name": "Weather",
   "icons": [{
     "src": "about/logo.png",
-      "sizes": "99x99",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "about/logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "about/logo.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "about/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "about/logo.png",
+      "sizes": "256x256",
       "type": "image/png"
     }],
   "start_url": "/index.html",
